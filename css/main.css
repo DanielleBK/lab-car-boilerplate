@@ -1,1 +1,181 @@
-/* Los estilos de tu proyecto */
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  background-color: #F7B617FF;
+  color: white;
+  box-sizing: border-box;
+}
+.taxi{
+  width: 100%;
+  height: 125vh;
+  background-image: url(../assets/images/taxi.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+.jumbotron{
+  background-color: #F7B617FF;
+  height: 400px;
+  width: 100%;
+  margin-top: 100px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.display-6{
+  font-size: 20px;
+  font-weight: bold;
+}
+.box{
+  display:flex;
+  margin-top:-90px;
+  margin-bottom:60px;
+  height: 400px;
+  width: 100%;
+  background-color: #F7B617FF;
+}
+.jumbotron-2{
+  background-color: #F7B617FF;
+  height: 400px;
+  width: 90%;
+  display: flex;
+  border: white 1px solid;
+  border-left-style: none;
+  padding: 20px;
+  margin-top:30px;
+ }
+ .row{
+   display:flex;
+   justify-content:flex-end;
+ }
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+ .third-slide{
+   background-image: url(../assets/images/conduce.jpg);
+   background-size:cover;
+   background-position:center;
+   background-repeat:no-repeat;
+ }
+ .driver{
+   background-color: rgba(0,0,0,0.6);
+   padding: 25% 10%;
+ }
+ .btn-driver{
+   background-color: #F7B617FF;
+   border: none;
+   color:white;
+ }
+ .tariff{
+   padding: 7% 0;
+ }
+ .tariff input{
+   border: 1px solid white;
+   border-radius: 5px;
+   line-height: 3.5;
+   background-color: transparent;
+   padding-left: 2%;
+   padding-right: 7%;
+   margin-bottom: 4%;
+
+ }
+ .tariff input::-webkit-input-placeholder {
+   color: white;
+ }
+ .tariff button{
+   font-weight: bold;
+   margin-bottom: 20%;
+ }
+ .map{
+   border: 1px solid white;
+   padding: 1%;
+ }
+ footer{
+   background-color: #2B2B2B;
+   padding: 5% 0;
+
+ }
+ footer .row{
+   border-bottom: 1px solid white;
+   padding-bottom: 2%;
+ }
+ .list-icons>a, .list-second>a, li>a{
+   color: white;
+   line-height: 3.5;
+ }
+ .list-icons{
+   padding-top: 33%;
+ }
+ .list-down{
+   padding-top: 23%;
+ }
+ #img-list img{
+   padding-top: 10%;
+ }
+ #img-list{
+   padding-top: 30%;
+ }
+ .forgot{
+   color:black;
+ }
+ #log-in .modal-content{
+   background-color: #08AC9D;
+ }
+ #log-in .modal-footer{
+   padding: 5% 15%;
+
+ }
+ #log-in .body-footer{
+   background-color: #F5F5F5;
+   padding-top: 5%;
+ }
+ #log-in .input-group{
+   margin-bottom: 5%;
+ }
+ #log-in button{
+   margin-bottom: 5%;
+ }
+ #registration .modal-content{
+   background-color: #A9A9A9;
+ }
+
+ #registration .input-group{
+   margin-bottom: 2%;
+ }
+ #registration .form-inline input{
+   width: 49%;
+   margin-bottom: 2%;
+ }
+ #registration .input-group {
+   padding-right: 1%;
+ }
+ .btn-registro{
+   background-color: black;
+   color: white;
+ }
+ #registration p{
+   color: black;
+ }
+ #dLabel{
+   background-color: #DDDDDD;
+   color: black;
+   font-weight: bold;
+ }
+ .btn-enviar{
+   background-color: #5BC0DE;
+   color: white;
+ }
+ #be-driver .modal-content{
+   background-color: #A9A9A9;
+   padding: 5%;
+   color: #4F463C;
+   width: 80%;
+ }
