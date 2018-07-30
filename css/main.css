@@ -7,6 +7,9 @@ body{
   color: white;
   box-sizing: border-box;
 }
+nav {
+  height: 100px;
+}
 /* 2 BOX */
 .taxi{
   width: 100%;
@@ -68,6 +71,7 @@ body{
   display:flex;
   justify-content:flex-end;
 }
+/* 4 BOX */
  .box-conduce{
    background-image: url(../assets/images/conduce.jpg);
    background-size:cover;
@@ -83,6 +87,7 @@ body{
    border: none;
    color:white;
  }
+ /* 5 BOX */
 .box-tariff{
   padding: 12px;
   display: flex;
@@ -111,6 +116,7 @@ body{
    border: 1px solid white;
    padding: 5px;
  }
+ /* 6 BOX */
  footer.container-fluid  {
    background-color: #2B2B2B;
    padding: 20px;
@@ -134,4 +140,13 @@ body{
  }
 .img-responsive{
   margin-top: 10px;
+}
+.modal-header{
+  background-color: red;
+}
+.modal-content{
+  background-color:#242025b0;
+}
+.modal input{
+ margin-top: 10px;
 }
