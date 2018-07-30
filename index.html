@@ -9,7 +9,7 @@
     <title>Labcar</title>
   </head>
   <body>
-    <!-- Nav -->
+<!-- Nav -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light p-5 row">
         <div class="col-md-8">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,28 +29,77 @@
                 <a class="nav-link" href="#">Conduce</a>
               </li>
               <li class="nav-item col-5">
-                <a class="nav-link" href="#">Inicia sesión</a>
+                <a class="nav-link" href="#login" data-toggle="modal">Inicia sesión</a>
               </li>
             </ul>
+          </div>
+        </div>
+<!--Modal LOGIN  -->
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="recipient-name" placeholder='Username'>
+                    <input type="text" class="form-control" id="recipient-name" placeholder='Password'>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">LOGING</button>
+                <p>Forgot password? Click Here.</p>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
 <!--caixa registro-->
       <div class="taxi">
-        <div class="jumbotron col-5 justify-content-end">
-          <p class="display-6">Disfruta del viaje <br> Eres dueño de tu tiempo</p>
-          <p class="lead">Viaja con </p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Registrate</a>
-          <p> <hr class="my-4"> O Bien <hr class="my-4"> </p>
-          <a class="btn-2 btn-primary btn-lg" href="#" role="button">Conviértete em un conductor</a>
+        <div class="jumbotron col-md-5 .col 4 hidden-xs justify-content-end">
+          <h3>Disfruta del viaje <br> Eres dueño de tu tiempo</h3>
+          <h4>Viaja con <img src="assets/images/logoBlanco.png" class="img-responsive" alt="LabCar"></h4>
+          <a class="btn btn-primary btn-lg btn-default" href="#registrate" data-toggle="modal" role="button">Registrate</a>
+          <p> O Bien </p>
+          <a class="btn btn-primary btn-lg btn-default" href="#" role="button">Conviértete em un conductor</a>
+        </div>
+<!--Modal registro -->
+        <div class="modal fade" id="registrate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ya tienes una cuenta?</h5>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Nombre">
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Apellido">
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Correo Electronico: ejemplo@correo.mx">
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Teléfono">
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Contraseña">
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Ciudad">
+                    <input type="text" class="form-control" id="recipient-name" placeholder="(Opcional) Código de invitación">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-lg btn-block bolder">Como te enteraste de nosotros?<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button>
+                <button type="button" class="btn btn-info btn-lg btn-block">ENVIAR</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-<!--Caixa com celular -->
-      <div class="box ">
+<!-- Caixa com celular -->
+       <div class="box-fluid">
         <div class="jumbotron-2 jumbotron-fluid">
-          <img class='mobile center-block img-responsive' src="assets/images/iPhone6Plus.png" alt="">
-           <div class="container">
-             <p class="lead text-end">La vesión actulizada de LabCar <br> está llena de nuevas funciones para <br>
+          <img class='mobile img-responsive' src="assets/images/iPhone6Plus.png" alt="">
+           <div class="container1 ">
+             <p class="lead">La vesión actulizada de LabCar <br> está llena de nuevas funciones para <br>
                llegar Cona donde quiseras aún más fácil <br> y rápido.<br> <br>
                Con solo tocar un otón,un auto <br> llega justo a tu uicación. Súete y <br>
                no te preocupes: tu conductor sabe <br> exactamente a dónde ir <br></p>
@@ -58,23 +107,9 @@
          </div>
        </div>
 <!-- Caixa transparente-->
-      <!-- <div class="row2">
-        <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
-      </div>
-      <section class="third-slide">
-         <div class="row">
-           <div class="col-md-offset-8 col-md-4  col-sm-9 col-xs-offset-3 col-xs-9">
-               <div class=" col-md-12 col-xs-12 col-sm-12 driver">
-                 <h2>Conduce cuando quieras </h2>
-                 <p class="lead">LabCar es una opción flexible para alcanzar tus metas financieras</p>
-                 <input data-toggle="modal" data-target="#be-driver" type="button" class="btn btn-default btn-lg btn-driver" value="Conviertete en conductor">
-               </div>
-           </div>
-         </div> -->
-       <!-- </section> -->
-       <section class="third-slide">
+       <section class="box-conduce">
           <div class="row">
-            <div class="col-md-offset-8 col-md-4  col-sm-9 col-xs-offset-3 col-xs-9">
+            <div class="col-md-offset-7 col-md-4  col-sm-9 col-xs-offset-3 col-xs-9">
                 <div class=" col-md-12 col-xs-12 col-sm-12 driver">
                   <h2>Conduce cuando quieras </h2>
                   <p class="lead">LabCar es una opción flexible para alcanzar tus metas financieras</p>
@@ -82,10 +117,67 @@
                 </div>
             </div>
           </div>
+<!--Modal Conductor  -->
+          <div class="modal fade" id="be-driver" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                  <form action="">
+                      <div class="form-group">
+                          <label for="vehiculo">¿Tienes vehículo de 4 puertas?</label>
+                          <select name="" id="vehiculo" class="form-control">
+                              <option value="">Si</option>
+                              <option value="">No</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="marca">Marca</label>
+                          <select name="" id="marca" class="form-control">
+                              <option value="">Elige la marca del vehículo</option>
+                              <option value="">Fiat</option>
+                              <option value="">Audi</option>
+                              <option value="">Chevrolet</option>
+                          </select>
+                          <p class="help-block">¿No ves tu vehículo en la lista? Envía un correo electrónico a <br/><a href="#">sociosmdv@uber.com</a></p>
+                      </div>
+                      <div class="form-group">
+                          <label for="modelo">Modelo</label>
+                          <select name="" id="modelo" class="form-control">
+                              <option value="">modelo1</option>
+                              <option value="">modelo2</option>
+                              <option value="">modelo3</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="año">Año</label>
+                          <select name="" id="año" class="form-control">
+                              <option value="">2018</option>
+                              <option value="">2017</option>
+                              <option value="">2016</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="matricula">Número de la matrícula</label>
+                          <input type="text" name="" id="matricula" placeholder="Número de la matrícula" class="form-control">
+                          <p class="help-block">La información de la matrícula ayuda a los clientes a identificar tu vehiculo</p>
+                      </div>
+                      <div class="form-group">
+                          <button type="button" class="btn btn-info btn-lg btn-block">ENVIAR</button>
+                      </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default btn-lg btn-block bolder">Como te enteraste de nosotros?<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button>
+                  <button type="button" class="btn btn-info btn-lg btn-block">ENVIAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
-       <!-- end of the third slide-->
-       <!-- tariff slide -->
-      <section class="tariff container container-fluid">
+<!-- Caixa Map e Tarifas -->
+      <section class="box-tariff container container-fluid">
          <div class="row container">
            <div class=" container col-md-12 col-md-offset-1 col-sm-12  col-xs-12">
              <div class="row container">
@@ -95,11 +187,11 @@
                    <p class="lead">Consulta las tarifas LabCar aquí</p>
                  </div>
                  <div class="col-md-12">
-                   <img src="../assets/images/shape.png" class=" ico" alt="">
+                   <img src="./assets/images/shape.png" class=" ico" alt="">
                    <input type="text" placeholder="Ingrese su punto de partida" class="input-lg start">
                  </div>
                  <div class="col-md-12">
-                   <img src="../assets/images/shape2.png" class=" ico" alt="">
+                   <img src="./assets/images/shape2.png" class=" ico" alt="">
                    <input type="text" placeholder="Ingrese su destino" class="input-lg finish">
                  </div>
                  <div class="col-md-12">
@@ -107,16 +199,14 @@
                  </div>
                </div>
                <div class=" map col-md-6 col-sm-12 col-xs-12">
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13303.354258799893!2d-70.61573075000001!3d-33.53158265!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1512566310824" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0656932253646!2d-46.652983985480006!3d-23.566083984680503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.+Paulista+-+Bela+Vista%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1532902036099" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
                </div>
-
               </div>
             </div>
           </div>
        </section>
-       <!-- end of the tariff slide-->
-       <!-- footer slide -->
-       <footer class="container-fluid">
+<!-- footer e Links-->
+       <<footer class="container-fluid">
         <div class="container">
           <div class="row">
             <div class="brand col-md-12">
@@ -124,13 +214,13 @@
             </div>
           </div>
           <div class="row">
-            <!-- <div class="list-icons col-md-3 hidden-xs hidden-sm">
+            <div class="list-icons col-md-3 hidden-xs hidden-sm">
               <a href="http://www.fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
               <a href="http://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
               <a href="http://www.apple.com"><i class="fa fa-apple" aria-hidden="true"></i></a>
               <a href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
-            </div> -->
+            </div>
             <div class="list-link col-md-3 col-sm-6 col-xs-6">
               <ul class="list-unstyled">
                 <li><a href="#">Viaja</a></li>
@@ -159,20 +249,10 @@
               <a href="#"><img class="img-responsive" src="assets/images/appstore.png" alt=""></a>
               <a href="#"><img class="img-responsive" src="assets/images/enBadgeWebGeneric.png" alt=""></a>
             </div>
-            <!-- only mobile -->
-            <div class="list-second hidden-lg hidden-md col-sm-6 col-xs-6">
-              <a href="http://www.fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              <a href="http://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              <a href="http://www.apple.com"><i class="fa fa-apple" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
-            </div>
           </div>
-          <p class="text-center">© 2017 LabCar technologies Inc.</p>
-        </div>
+        <p class="text-center">© 2017 LabCar technologies Inc.</p>
       </footer>
 <!-- Script -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <script src="https://use.fontawesome.com/4db2d1a00b.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
